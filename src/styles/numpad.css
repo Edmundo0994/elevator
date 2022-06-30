@@ -1,0 +1,24 @@
+.numpad {
+    max-width: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    padding: 20px 0px;
+    background-color: rgb(119, 119, 119);
+}
+
+.floor {
+  display: grid;
+  grid-template-columns: 70px 70px;
+  grid-gap: 5px;
+}
+
+.floor button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+    justify-self: center;
+}
