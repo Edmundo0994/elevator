@@ -1,13 +1,17 @@
-import '../styles/globals.css'
-import "../styles/numpad.css"
+import '@styles/globals.css'
+import "@styles/numpad.css"
+import "@styles/elevator.css"
 import { ProviderNumpad } from "@hooks/useNumpad"
+import { ProviderFloorpad } from "@hooks/useFloorPad"
 
 
 function MyApp({ Component, pageProps }) {
   return (
     <>
       <ProviderNumpad>
-        <Component {...pageProps} />
+        <ProviderFloorpad>
+          <Component {...pageProps} />
+        </ProviderFloorpad>
       </ProviderNumpad>
     </>
   ) 

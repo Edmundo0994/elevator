@@ -19,7 +19,6 @@ function useProviderFloorpad(){
     3: {upPressed: false, downPressed: false},
     4: {upPressed: false, downPressed: false},
     5: {upPressed: false, downPressed: false},
-    6: {upPressed: false, downPressed: false},
   })
 
   const setPressOnFloorpad = async (floor, direction) => {

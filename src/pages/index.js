@@ -1,11 +1,11 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import Numpad from '../components/Numpad'
+import Numpad from '@components/Numpad'
+import Floor from '@components/Floor'
 
 export default function Home() {
   return (
-    <div>
+    <div className='main-container'>
       <Numpad />
+      <Floor />
     </div>
   )
 }

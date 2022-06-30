@@ -1,0 +1,25 @@
+.contenedor-elevador {
+  display: flex;
+  justify-content: space-around;
+}
+
+.contenedor-elevador .elevator {
+  flex-basis: 75%;
+  text-align: center;
+}
+
+.contenedor-elevador .botones {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  flex-basis: 25%;
+}
+
+.contenedor-elevador .elevator-doors {
+  height: 150px;
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-flow: column;
+}
+

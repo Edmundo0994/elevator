@@ -8,15 +8,20 @@ export default function Numpad(){
 		console.log(numpad)
 	},[numpad])
 	return (
-		<div className="numpad">
-			<div className="floor">
-				{floors.map((floor) => {
-					if (floor != "direction"){
-						return <button key={floor} onClick={() => setFloorNumpad(floor)}>{floor}</button>
-					}
-				})}
+		<div className="contenedor-numpad">
+			<div className="indicador">
+				<span >0</span>
 			</div>
-			<span>Direction = {numpad.direction == null ? "Stopped" : numpad.direction}</span>
+			<div className="numpad">
+				<div className="floor">
+					{floors.map((floor) => {
+						if (floor != "direction"){
+							return <button key={floor} onClick={() => setFloorNumpad(floor)}>{floor}</button>
+						}
+					})}
+				</div>
+				<span>Direction = {numpad.direction == null ? "Stopped" : numpad.direction}</span>
+			</div>
 		</div>
 	)
 }

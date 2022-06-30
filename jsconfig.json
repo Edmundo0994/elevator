@@ -10,6 +10,7 @@
         "@services/*": ["services/*"],
         "@context/*": ["context/*"],
         "@hooks/*": ["hooks/*"],
+        "@images/*": ["images/*"],
       }
     }
   }

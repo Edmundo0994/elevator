@@ -1,10 +1,28 @@
+.contenedor-numpad{
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.indicador {
+  background-color: black;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.indicador span{
+  color: white;
+  text-align: center;
+  font-size: 54px;
+}
+
 .numpad {
     max-width: 220px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: column;
-    padding: 20px 0px;
+    padding: 20px 30px;
     background-color: rgb(119, 119, 119);
 }
 
