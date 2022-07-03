@@ -1,6 +1,8 @@
 .contenedor-numpad{
   border-radius: 15px;
   overflow: hidden;
+  border: solid 2px rgb(102, 102, 102);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.479);
 }
 
 .indicador {
@@ -23,7 +25,12 @@
     align-items: center;
     flex-flow: column;
     padding: 20px 30px;
-    background-color: rgb(119, 119, 119);
+    background-color: rgb(124, 124, 124);
+}
+
+.numpad .direction {
+  margin-top: 15px;
+  color: white;
 }
 
 .floor {
@@ -39,4 +46,16 @@
     height: 50px;
     width: 50px;
     justify-self: center;
+    border-radius: 10px;
+    border: rgb(78, 78, 78) solid 3px;
+    color: rgb(78, 78, 78);
+}
+
+.floor button:hover {
+  background-color: lightgray;
+  cursor: pointer;
+}
+
+.floor button.selected {
+  border: yellow solid 1px;
 }

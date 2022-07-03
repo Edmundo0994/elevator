@@ -13,12 +13,12 @@ export const useFloorpad = () => {
 
 function useProviderFloorpad(){
   const [floorpad, setFloorpad] = useState({
-    0: {upPressed: false, downPressed: false},
-    1: {upPressed: false, downPressed: false},
-    2: {upPressed: false, downPressed: false},
-    3: {upPressed: false, downPressed: false},
-    4: {upPressed: false, downPressed: false},
-    5: {upPressed: false, downPressed: false},
+    0: {upPressed: false, floor: 0},
+    1: {upPressed: false, downPressed: false, floor: 1},
+    2: {upPressed: false, downPressed: false, floor: 2},
+    3: {upPressed: false, downPressed: false, floor: 3},
+    4: {upPressed: false, downPressed: false, floor: 4},
+    5: {downPressed: false, floor: 5},
   })
 
   const setPressOnFloorpad = async (floor, direction) => {
@@ -48,6 +48,6 @@ function useProviderFloorpad(){
   return {
     setPressOnFloorpad,
     unSetPressOnFloorpad,
-    floorpad
+    floorpad,
   }
 }

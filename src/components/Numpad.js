@@ -2,11 +2,11 @@ import { useNumpad } from "@hooks/useNumpad"
 import { useEffect } from "react"
 
 export default function Numpad(){
-	const {setFloorNumpad, unSetFloorNumpad, numpad} = useNumpad()
+	const {setFloorNumpad, unSetFloorNumpad, numpad, direction} = useNumpad()
 	const floors = Object.keys(numpad)
 	useEffect(() => {
 		console.log(numpad)
-	},[numpad])
+	},[numpad, direction])
 	return (
 		<div className="contenedor-numpad">
 			<div className="indicador">
@@ -16,11 +16,11 @@ export default function Numpad(){
 				<div className="floor">
 					{floors.map((floor) => {
 						if (floor != "direction"){
-							return <button key={floor} onClick={() => setFloorNumpad(floor)}>{floor}</button>
+							return <button key={floor} onClick={() => setFloorNumpad(floor)} className={numpad[floor] === true ? "selected" : ""}>{floor}</button>
 						}
 					})}
 				</div>
-				<span>Direction = {numpad.direction == null ? "Stopped" : numpad.direction}</span>
+				<span className="direction">Direction = {direction == null ? "Stopped" : direction}</span>
 			</div>
 		</div>
 	)
